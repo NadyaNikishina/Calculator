@@ -1,12 +1,99 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Calculator</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
+
+<body class="body">
+    <main class="main">
+        <section class="section-left">
+            <header class="section-left__header">
+                <h1 class="section-left__headline">Калькулятор<br>доходности</h1>
+            </header>
+            <section class="section-left__controls controls">
+                <div class="controls__item">
+                    <div class="controls__captions">
+                        <h3 class="controls__caption">Сумма</h3>
+                        <h2 class="controls__params"><span class="change-params-sum">1 200 000</span>₽</h2>
+                    </div>
+                    <div id="slider-sum" class="controls__slider">
+                        <div class="controls__slider-thumb"></div>
+                    </div>
+                </div>
+                <div class="controls__item">
+                    <div class="controls__captions">
+                        <h3 class="controls__caption">Срок</h3>
+                        <h2 class="controls__params"><span class="change-params">1</span> мес.</h2>
+                    </div>
+                    <div id="slider-months" class="controls__slider">
+                        <div class="controls__slider-thumb"></div>
+                    </div>
+                </div>
+                <div class="controls__item">
+
+                    <nav class="controls__types">
+                        <input class="controls__radio" id="radio-concerv" type="radio" name="types" checked>
+                        <label for="radio-concerv" class="types__item">
+                            <div class="radio"></div>Консервативный
+                        </label>
+                        <input class="controls__radio" id="radio-balance" type="radio" name="types">
+                        <label for="radio-balance" class="types__item">
+                            <div class="radio"></div>Сбалансированный
+                        </label>
+                        <input class="controls__radio" id="radio-risk" type="radio" name="types">
+                        <label for="radio-risk" class="types__item">
+                            <div class="radio"></div>Рискованный
+                        </label>
+                    </nav>
+                </div>
+            </section>
+        </section>
+        <section class="section-right">
+            <section class="section-right__columns">
+                <div class="section-right__standart-col">
+                    <h2 class="section-right__sum">+<span class="profit-left">80 000</span> ₽</h2>
+                    <h3 class="section-right__percent">6.5 % годовых</h3>
+                    <figure class="section-right__col">
+                        <div class="columns__wrapper">
+                            <div class="columns__change-left">
+                                <div class="columns__1"></div>
+                            </div>
+                            <div class="columns__3"></div>
+                            <div class="columns__4"></div>
+                        </div>
+                        <div class="columns__caption">
+                            <figcaption>Депозит</figcaption>
+                            <div class="caption__info">?</div>
+                            <div class="caption__info_hover">Какая-то информация</div>
+                        </div>
+                    </figure>
+                </div>
+                <div class="section-right__best-col">
+                    <h2 class="section-right__sum">+<span class="profit-right">350 000</span> ₽</h2>
+                    <h3 class="section-right__percent"><span class="change-percent">25</span> % годовых</h3>
+                    <figure class="section-right__col">
+                        <div class="columns__wrapper">
+                            <div class="columns__change-right">
+                                <div class="columns__1"></div>
+                            </div>
+                            <div class="columns__3"></div>
+                            <div class="columns__4"></div>
+                        </div>
+                        <figcaption class="columns__caption">Город Денег</figcaption>
+                    </figure>
+                </div>
+            </section>
+            <a href="#" class="section-right__button">Инвестировать</a>
+
+        </section>
+    </main>
+    <script src="script.js"></script>
+
 </body>
+
 </html>
